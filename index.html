@@ -6,9 +6,7 @@
     <title>Sewa Photobooth & 360 Video Tangerang - zifoto.booth</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -60,6 +58,13 @@
             backdrop-filter: blur(10px);
         }
         
+        /* PENGATURAN LOGO DI SINI */
+        .navbar-brand img {
+            max-height: 75px; /* DIPERBESAR (sebelumnya 20px) */
+            width: auto;      
+            transition: 0.3s;
+        }
+
         /* HERO SECTION */
         .hero-section {
             position: relative;
@@ -85,7 +90,7 @@
         .service-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
         .service-img { height: 200px; object-fit: cover; width: 100%; }
 
-        /* PRICING TABS (PILLS) */
+        /* PRICING TABS */
         .nav-pills .nav-link {
             color: var(--primary-blue);
             background-color: white;
@@ -119,11 +124,7 @@
             transform: rotate(45deg); width: 150px; text-align: center;
             font-weight: bold; padding: 5px 0;
         }
-        /* Tambahkan kode ini di dalam <style> */
-        .navbar-brand img {
-    max-height: 20px; /* Atur angka ini sesuai keinginan (misal 40px, 60px) */
-    width: auto;      /* Agar gambar tidak gepeng */
-}
+
         /* WA FLOAT */
         .wa-float {
             position: fixed; bottom: 30px; right: 30px;
@@ -141,11 +142,11 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm py-1">
         <div class="container">
             <a class="navbar-brand" href="#">
-    <img src="logo.png" alt="" style="max-height: 100px; width: auto;">
-</a>
+                <img src="logo.png" alt="zifoto logo">
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="fas fa-bars text-blue"></span>
             </button>
@@ -199,7 +200,6 @@
                             <li><i class="fas fa-check text-yellow me-2"></i> Cetak High Glossy </li>
                             <li><i class="fas fa-check text-yellow me-2"></i> Fun Props (Topi/Kacamata)</li>
                             <li><i class="fas fa-check text-yellow me-2"></i> Printer DNP hasil cetak foto dengan kualitas tinggi,<li> <i class="fas fa-check text-yellow me-2"></i> optimal, dan hasil warna yang tajam serta konsisten. </li>
-                        
                         </ul>
                     </div>
                 </div>
@@ -391,7 +391,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
